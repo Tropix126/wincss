@@ -17,7 +17,7 @@ textarea {
     border-radius: 3px;
     width: fit-content;
     color: rgba(var(--Base), 1);
-    &[AllowResize="true"] {
+    &[AllowResize="true" i] {
         resize: both;
     }
     &[IsEnabled="false" i], &[disabled] {
