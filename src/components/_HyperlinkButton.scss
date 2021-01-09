@@ -1,0 +1,28 @@
+/**
+ * WinCSS HyperlinkButton Component
+ * http://github.com/tropix126/WinCSS
+*/
+
+.HyperlinkButton {
+    font-family: 'Segoe UI', sans-serif;
+    color: $AccentColor;
+    font-size: 14px;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    text-decoration-skip: none;
+    line-height: 20px;
+    display: inline-block;
+    cursor: pointer;
+    &:not([IsEnabled="false" i]):not([disabled]) {
+        &:hover {
+            color: rgba(var(--Base), 0.6);
+        }
+        &:active {
+            color: rgba(var(--Base), 0.4);
+        }
+    }
+    &[IsEnabled="false" i], &[disabled] {
+        color: rgba(var(--Base), 0.4);
+        cursor: default;
+    }
+}

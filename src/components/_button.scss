@@ -5,6 +5,7 @@
 
 button {
     max-width: 100%;
+    height: 32px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -20,7 +21,7 @@ button {
     font-weight: 400;
     line-height: 20px;
     border-radius: 2px;
-    padding: 6px 10px;
+    padding: 0 10px;
     transition: 300ms linear transform;
     span {
         max-width: 100%;
@@ -31,17 +32,16 @@ button {
     }
     &.Wrap span {
         white-space: normal;
+        text-align: left;
     }
-    &:active {
-        &:not([IsEnabled="false" i]), [disabled] {
-            transform:scale(.975);
-            transition: 50ms linear transform;
-        }
+    &:active:not([IsEnabled="false" i]):not([disabled]) {
+        transform:scale(.975);
+        transition: 50ms linear transform;
     }
     &.AccentButton {
         background-color: $AccentColor;
         color: rgba($ChromeLight, 1);
-        &:not([IsEnabled="false" i]), [disabled] {
+        &:not([IsEnabled="false" i]):not([disabled]) {
             &:hover {
                 background-color: $AccentColorLight1;
             }
@@ -49,14 +49,11 @@ button {
                 background-color: $AccentColorDark1;
             }
         }
-        &[IsEnabled="false" i], &[disabled] {
-            color: rgba($ChromeLight, 0.4);
-        }
     }
     &:not(.AccentButton) {
         background-color: rgba(var(--Base), 0.2);
         color: rgba(var(--Base), 1);
-        &:not([IsEnabled="false" i]) {
+        &:not([IsEnabled="false" i]):not([disabled]) {
             &:hover {
                 background-color: rgba(var(--Base), 0.1);
             }
@@ -64,12 +61,14 @@ button {
                 background-color: rgba(var(--Base), 0.4);
             }
         }
-        &[IsEnabled="false" i], &[disabled] {
-            color: rgba(var(--Base), 0.4);
-        }
     }
     &.ImageButton {
+        height: auto;
+        padding: 9px;
         background-color: transparent;
-        padding: 10px;
+    }
+    &[IsEnabled="false" i], &[disabled] {
+        background-color: rgba(var(--Base), 0.2);
+        color: rgba(var(--Base), 0.4);
     }
 }

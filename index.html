@@ -10,25 +10,36 @@
 <body style="padding:20px;box-sizing:border-box;background:rgba(var(--Alt)); margin: 0; height: 100vh">
     <div style="display:flex;justify-content:space-between;flex-wrap:wrap;margin-bottom:10px;">
         <h1 style="font-family:'Segoe UI', sans-serif; color: rgba(var(--Base), 1);font-weight:300;margin:0;user-select:none;font-size:48px">Debug</h1>
-        <button style="height:fit-content;" onclick="document.documentElement.classList.toggle('theme-light');document.documentElement.classList.toggle('theme-dark');">
+        <button onclick="document.documentElement.classList.toggle('theme-light');document.documentElement.classList.toggle('theme-dark');">
             <span>Toggle Theme</span>
         </button>
     </div>
-    <button class="AccentButton">
-        <span>Primary</span>
-    </button>
-    <button IsEnabled="false" class="AccentButton">
-        <span>Disabled Primary</span>
-    </button>
-    <button>
-        <span>Secondary</span>
-    </button>
-    <button>
-        <span>Disabled Secondary</span>
-    </button>
-    <button class="ImageButton">
-        <img src="./Assets/Slices.png" alt="Slice" width="32" height="32"/>
-    </button>
+    <div style="margin-bottom:16px;display:flex;gap:10px;align-items:center;flex-wrap:wrap;">
+        <button class="AccentButton">
+            <span>Primary</span>
+        </button>
+        <button>
+            <span>Secondary</span>
+        </button>
+        <button IsEnabled="false">
+            <span>Disabled</span>
+        </button>
+        <button class="ImageButton">
+            <img src="./Assets/Slices.png" alt="Slice" width="32" height="32"/>
+        </button>
+    </div>
+    <div style="margin-bottom:16px;display:flex;gap:10px;align-items:center;flex-wrap:wrap;">
+        <button class="DropDownButton">
+            <span>DropDownButton</span>
+            <svg width="14" height="11.2" ViewBox="0 0 20 20">
+                <path d="M 18.935547 4.560547 L 19.814453 5.439453 L 10 15.253906 L 0.185547 5.439453 L 1.064453 4.560547 L 10 13.496094 Z"></path>
+            </svg>
+        </button>
+    </div>
+    <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;">
+        <a class="HyperlinkButton" href="#">Hyperlink</a>
+        <a class="HyperlinkButton" IsEnabled="false" href="#">Hyperlink (Disabled)</a>
+    </div>
 </body>
 
 </html>
