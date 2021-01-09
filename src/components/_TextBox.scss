@@ -23,24 +23,41 @@ textarea {
     &[IsEnabled="false" i], &[disabled] {
         background-color: rgba(var(--Base), 0.2);
         cursor: default;
-        &::placeholder,
-        &::-moz-placeholder,
-        &::-webkit-input-placeholder,
-        &:-ms-input-placeholder,
+        &::placeholder {
+            color: rgba(var(--Base), 0.4);
+        }
+        &::-moz-placeholder {
+            color: rgba(var(--Base), 0.4);
+
+        }
+        &::-webkit-input-placeholder {
+            color: rgba(var(--Base), 0.4);
+        }
+        &:-ms-input-placeholder {
+            color: rgba(var(--Base), 0.4);
+        }
         &:-moz-placeholder {
             color: rgba(var(--Base), 0.4);
         }
     }
     &:not([IsEnabled="false" i]):not([disabled]) {
-        &::placeholder,
-        &::-moz-placeholder,
-        &::-webkit-input-placeholder,
-        &:-ms-input-placeholder,
+        box-shadow: inset 0 0 0 1px rgba(var(--Base), 0.6);
+        background-color: rgba(var(--Alt), 0.4);
+        &::placeholder {
+            color: rgba(var(--Base), 0.6);
+        }
+        &::-moz-placeholder {
+            color: rgba(var(--Base), 0.6);
+        }
+        &::-webkit-input-placeholder {
+            color: rgba(var(--Base), 0.6);
+        }
+        &:-ms-input-placeholder {
+            color: rgba(var(--Base), 0.6);
+        }
         &:-moz-placeholder {
             color: rgba(var(--Base), 0.6);
         }
-        box-shadow: inset 0 0 0 1px rgba(var(--Base), 0.6);
-        background-color: rgba(var(--Alt), 0.4);
         &:hover {
             background-color: rgba(var(--Alt), 1);
             box-shadow: inset 0 0 0 1px rgba(var(--Base), 0.8);
@@ -48,10 +65,18 @@ textarea {
         &:focus {
             background-color: rgba(var(--Alt), 1);
             box-shadow: inset 0 0 0 2px $AccentColor;
-            &::placeholder,
-            &::-moz-placeholder,
-            &::-webkit-input-placeholder,
-            &:-ms-input-placeholder,
+            &::placeholder {
+                color: rgba(var(--Base), 0.4);
+            }
+            &::-moz-placeholder {
+                color: rgba(var(--Base), 0.4);
+            }
+            &::-webkit-input-placeholder {
+                color: rgba(var(--Base), 0.4);
+            }
+            &:-ms-input-placeholder{
+                color: rgba(var(--Base), 0.4);
+            }
             &:-moz-placeholder {
                 color: rgba(var(--Base), 0.4);
             }
