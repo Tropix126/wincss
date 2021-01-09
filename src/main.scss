@@ -1,0 +1,13 @@
+/**
+ * WinCSS Imports
+ * 
+ * Required components should be imported
+ * through this file. Components are found
+ * in the components folder.
+*/
+
+// Import core
+@import 'core';
+
+// Included components
+@import 'components/button';

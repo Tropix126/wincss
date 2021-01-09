@@ -1,0 +1,34 @@
+<!doctype html>
+
+<html lang="en" class="theme-dark">
+    <head>
+    <meta charset="utf-8">
+    <title>component test</title>
+    <link rel="stylesheet" href="dist/win.css">
+</head>
+
+<body style="padding:20px;box-sizing:border-box;background:rgba(var(--Alt)); margin: 0; height: 100vh">
+    <div style="display:flex;justify-content:space-between;flex-wrap:wrap;margin-bottom:10px;">
+        <h1 style="font-family:'Segoe UI', sans-serif; color: rgba(var(--Base), 1);font-weight:300;margin:0;user-select:none;font-size:48px">Debug</h1>
+        <button style="height:fit-content;" onclick="document.documentElement.classList.toggle('theme-light');document.documentElement.classList.toggle('theme-dark');">
+            <span>Toggle Theme</span>
+        </button>
+    </div>
+    <button class="AccentButton">
+        <span>Primary</span>
+    </button>
+    <button IsEnabled="false" class="AccentButton">
+        <span>Disabled Primary</span>
+    </button>
+    <button>
+        <span>Secondary</span>
+    </button>
+    <button>
+        <span>Disabled Secondary</span>
+    </button>
+    <button class="ImageButton">
+        <img src="./Assets/Slices.png" alt="Slice" width="32" height="32"/>
+    </button>
+</body>
+
+</html>

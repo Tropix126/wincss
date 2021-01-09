@@ -1,0 +1,15 @@
+/**
+ * WinCSS Dark Variables
+ * 
+ * These variables are only applied
+ * when the theme-dark class is
+ * present.
+*/
+
+$Base: 255, 255, 255;
+$Alt: 0, 0, 0;
+
+.theme-dark {
+    --Base: #{$Base};
+    --Alt: #{$Alt};
+}

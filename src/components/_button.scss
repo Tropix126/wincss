@@ -1,0 +1,75 @@
+/**
+ * WinCSS Button Component
+ * http://github.com/tropix126/WinCSS
+*/
+
+button {
+    max-width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-align: center;
+    cursor: default;
+    user-select: none;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    border-radius: 2px;
+    padding: 6px 10px;
+    transition: 300ms linear transform;
+    span {
+        max-width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        word-break: break-word;
+        text-overflow: ellipsis;
+    }
+    &.Wrap span {
+        white-space: normal;
+    }
+    &:active {
+        &:not([IsEnabled="false" i]), [disabled] {
+            transform:scale(.975);
+            transition: 50ms linear transform;
+        }
+    }
+    &.AccentButton {
+        background-color: $AccentColor;
+        color: rgba($ChromeLight, 1);
+        &:not([IsEnabled="false" i]), [disabled] {
+            &:hover {
+                background-color: $AccentColorLight1;
+            }
+            &:active {
+                background-color: $AccentColorDark1;
+            }
+        }
+        &[IsEnabled="false" i], &[disabled] {
+            color: rgba($ChromeLight, 0.4);
+        }
+    }
+    &:not(.AccentButton) {
+        background-color: rgba(var(--Base), 0.2);
+        color: rgba(var(--Base), 1);
+        &:not([IsEnabled="false" i]) {
+            &:hover {
+                background-color: rgba(var(--Base), 0.1);
+            }
+            &:active {
+                background-color: rgba(var(--Base), 0.4);
+            }
+        }
+        &[IsEnabled="false" i], &[disabled] {
+            color: rgba(var(--Base), 0.4);
+        }
+    }
+    &.ImageButton {
+        background-color: transparent;
+        padding: 10px;
+    }
+}

@@ -1,0 +1,15 @@
+/**
+ * WinCSS Global Variables
+ * 
+ * These variables are not affected by
+ * theme mode changes and applied
+ * globally.
+*/
+
+// Accent
+$AccentColor: #0078d4;
+$AccentColorLight1: mix($AccentColor, #ffffff, 75%);
+$AccentColorDark1: mix($AccentColor, #000000, 75%);
+
+// Chrome colors (constant base colors)
+$ChromeLight: #ffffff;
