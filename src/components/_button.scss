@@ -3,7 +3,10 @@
  * http://github.com/tropix126/WinCSS
 */
 
-button {
+button,
+input[type="button" i],
+input[type="submit" i],
+input[type="reset" i] {
     max-width: 100%;
     height: 32px;
     display: inline-flex;

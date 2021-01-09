@@ -1,0 +1,14 @@
+/**
+ * WinCSS ControlHeader Component
+ * http://github.com/tropix126/WinCSS
+*/
+
+label {
+    display: block;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(var(--Base), 1);
+    margin-bottom: 3px;
+}

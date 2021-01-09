@@ -15,14 +15,14 @@
         </button>
     </div>
     <div style="margin-bottom:16px;display:flex;gap:10px;align-items:center;flex-wrap:wrap;">
-        <button class="AccentButton">
-            <span>Primary</span>
-        </button>
         <button>
-            <span>Secondary</span>
+            <span>Button</span>
+        </button>
+        <button class="AccentButton">
+            <span>Accent Button</span>
         </button>
         <button IsEnabled="false">
-            <span>Disabled</span>
+            <span>Disabled Button</span>
         </button>
         <button class="ImageButton">
             <img src="./Assets/Slices.png" alt="Slice" width="32" height="32"/>
@@ -36,9 +36,22 @@
             </svg>
         </button>
     </div>
-    <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;">
+    <div style="margin-bottom:16px;display:flex;gap:10px;align-items:center;flex-wrap:wrap;">
         <a class="HyperlinkButton" href="#">Hyperlink</a>
         <a class="HyperlinkButton" IsEnabled="false" href="#">Hyperlink (Disabled)</a>
+    </div>
+    <div style="margin-bottom:16px;display:flex;gap:10px;align-items:center;flex-wrap:wrap;">
+        <div>
+            <label>Text Input</label>
+            <input placeholder="Hint text" type="text"></input>
+        </div>
+        <div>
+            <label>Disabled Input</label>
+            <input readonly IsEnabled="false" placeholder="Hint text" type="text"></input>
+        </div>
+    </div>
+    <div style="margin-bottom:16px;display:flex;gap:10px;align-items:center;flex-wrap:wrap;">
+        <textarea style="width:373px;height:80px" placeholder="Textarea element"></textarea>
     </div>
 </body>
 
