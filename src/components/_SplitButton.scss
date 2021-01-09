@@ -1,0 +1,19 @@
+/**
+ * WinCSS SplitButton Component
+ * http://github.com/tropix126/WinCSS
+*/
+
+.SplitButtonContainer {
+    display: inline-flex;
+    align-items: center;
+    .SplitButtonLeft {
+        border-radius: 2px 0 0 2px;
+    }
+    .SplitButtonRight {
+        border-radius: 0 2px 2px 0;
+        margin-left: 1px;
+        svg path {
+            fill: currentColor;
+        }
+    }
+}
