@@ -1,0 +1,13 @@
+/**
+ * WinCSS FormOption Component
+ * http://github.com/tropix126/WinCSS
+*/
+
+.FormOption {
+    display: flex;
+    align-items: center;
+    label {
+        margin: 0;
+        padding-left: 8px;
+    }
+}

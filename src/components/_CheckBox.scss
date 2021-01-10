@@ -1,0 +1,64 @@
+.CheckBoxContainer {
+    display: inline-flex;
+    position: relative;
+    input[type="checkbox" i] {
+        appearance: none;
+        outline: none;
+        box-sizing: border-box;
+        margin: 0;
+        border-radius: 2px;
+        width: 20px;
+        height: 20px;
+        border: 1px solid;
+        &:not([IsEnabled="false" i]):not([disabled]) {
+            border-color: rgba(var(--Base), 0.6);
+            &:hover {
+                border-color: rgba(var(--Base), 0.8);
+            }
+            &:active {
+                background-color: rgba(var(--Base), 0.6);   
+                border-color: rgba(var(--Base), 1);
+            }
+            &:checked {
+                background-color: $AccentColor;
+                border-color: transparent;
+                &:hover {
+                    background-color: $AccentColorLight1;
+                }
+                &:active {
+                    background-color: $AccentColorDark1;
+                }
+            }
+        }
+        &[IsEnabled="false" i], &[disabled] {
+            border-color: rgba(var(--Base), 0.4);
+            &:checked {
+                background-color: rgba(var(--Base), 0.4);
+                border-color: transparent;
+            }
+        }
+        &:checked:not([indeterminate]) + .CheckBoxSymbol::after {
+            content: '';
+            font-family: 'Segoe MDL2 Assets';
+            font-size: 12px;
+        }
+        &:checked[indeterminate] + .CheckBoxSymbol::after {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background-color: $ChromeLight;
+        }
+    }
+    .CheckBoxSymbol {
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $ChromeLight;
+    }
+}

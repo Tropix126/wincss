@@ -54,16 +54,42 @@
         </div>
         <div style="margin-bottom:16px;display:flex;gap:10px;align-items:center;flex-wrap:wrap;">
             <div>
-                <label>Text Input</label>
-                <input placeholder="Hint text" type="text"></input>
+                <label for="Input1">Text Input</label>
+                <input id="Input1" placeholder="Hint text" type="text"></input>
             </div>
             <div>
-                <label>Disabled Input</label>
-                <input readonly IsEnabled="false" placeholder="Hint text" type="text"></input>
+                <label for="Input2">Disabled Input</label>
+                <input id="Input2" readonly IsEnabled="false" placeholder="Hint text" type="text"></input>
             </div>
         </div>
         <div style="margin-bottom:16px;display:flex;gap:10px;align-items:center;flex-wrap:wrap;">
-            <textarea style="width:373px;height:80px" placeholder="Textarea element"></textarea>
+            <div>
+                <label for="Textarea1">Textarea</label>
+                <textarea  style="width:373px;height:80px" id="Textarea1" placeholder="Hint Text"></textarea>
+            </div>
+        </div>
+        <div style="margin-bottom:16px;display:flex;flex-direction:column;gap:10px;align-items:flex-start;flex-wrap:wrap;">
+            <div class="FormOption">
+                <div class="CheckBoxContainer">
+                    <input id="Checkbox1" type="checkbox" />
+                    <div class="CheckBoxSymbol"></div>
+                </div>
+                <label for="Checkbox1">CheckBox</label>
+            </div>
+            <div class="FormOption">
+                <div class="CheckBoxContainer">
+                    <input indeterminate id="Checkbox2" type="checkbox" />
+                    <div class="CheckBoxSymbol"></div>
+                </div>
+                <label for="Checkbox2">CheckBox (indeterminate)</label>
+            </div>
+            <div class="FormOption">
+                <div class="CheckBoxContainer">
+                    <input IsEnabled="false" id="Checkbox3" type="checkbox" />
+                    <div class="CheckBoxSymbol"></div>
+                </div>
+                <label for="Checkbox3">CheckBox (disabled)</label>
+            </div>
         </div>
     </div>
 </body>
