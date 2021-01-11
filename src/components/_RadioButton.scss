@@ -1,22 +1,20 @@
 /**
-* WinCSS CheckBox Component
-* http://github.com/tropix126/WinCSS
+ * WinCSS RadioButton Component
+ * http://github.com/tropix126/WinCSS
 */
 
-$CheckMarkSymbol: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='17' ViewBox='24 17'%3E%3Cpath d='m 24 1 l -16 16 l -8 -8 l 1 -1 l 7 7 l 15 -15 z'/%3E%3C/svg%3E";
-
-input[type="checkbox" i] {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+input[type="radio" i] {
     appearance: none;
     outline: none;
     box-sizing: border-box;
     margin: 0;
-    border-radius: 2px;
+    border-radius: 50px;
     width: 20px;
     height: 20px;
     border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     &:not([IsEnabled="false" i]):not([disabled]) {
         border-color: rgba(var(--Base), 0.6);
         &:hover {
@@ -37,24 +35,18 @@ input[type="checkbox" i] {
             }
         }
     }
+    &:checked::after {
+        content: '';
+        width: 9px;
+        height: 9px;
+        background-color: $ChromeLight;
+        border-radius: 50%;
+    }
     &[IsEnabled="false" i], &[disabled] {
         border-color: rgba(var(--Base), 0.4);
         &:checked {
             background-color: rgba(var(--Base), 0.4);
             border-color: transparent;
         }
-    }
-    &:checked::after {
-        content: '';
-        background-color: $ChromeLight;
-    }
-    &:checked:not([indeterminate])::after {
-        width: 12px;
-        height: 12px;
-        mask: url($CheckMarkSymbol) center/contain no-repeat;
-    }
-    &:checked[indeterminate]::after {
-        width: 8px;
-        height: 8px;
     }
 }

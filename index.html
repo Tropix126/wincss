@@ -70,26 +70,33 @@
         </div>
         <div style="margin-bottom:16px;display:flex;flex-direction:column;gap:10px;align-items:flex-start;flex-wrap:wrap;">
             <div class="FormOption">
-                <div class="CheckBoxContainer">
-                    <input id="Checkbox1" type="checkbox" />
-                    <div class="CheckBoxSymbol"></div>
-                </div>
+                <input id="Checkbox1" type="checkbox" />
                 <label for="Checkbox1">CheckBox</label>
             </div>
             <div class="FormOption">
-                <div class="CheckBoxContainer">
-                    <input indeterminate id="Checkbox2" type="checkbox" />
-                    <div class="CheckBoxSymbol"></div>
-                </div>
+                <input indeterminate id="Checkbox2" type="checkbox" />
                 <label for="Checkbox2">CheckBox (indeterminate)</label>
             </div>
             <div class="FormOption">
-                <div class="CheckBoxContainer">
-                    <input IsEnabled="false" id="Checkbox3" type="checkbox" />
-                    <div class="CheckBoxSymbol"></div>
-                </div>
+                <input IsEnabled="false" id="Checkbox3" type="checkbox" />
                 <label for="Checkbox3">CheckBox (disabled)</label>
             </div>
+        </div>
+        <div style="margin-bottom:16px;display:flex;flex-direction:column;gap:10px;align-items:flex-start;flex-wrap:wrap;">
+            <form style="display:flex;flex-direction:column;gap:10px;">
+                <div class="FormOption">
+                    <input name="radioForm" id="Radio1" type="radio" />
+                    <label for="Radio1">Radio Option 1</label>
+                </div>
+                <div class="FormOption">
+                    <input name="radioForm" id="Radio2" type="radio" />
+                    <label for="Radio2">Radio Option 2</label>
+                </div>
+                <div class="FormOption">
+                    <input name="radioForm" id="Radio3" disabled type="radio" />
+                    <label for="Radio3">Disabled Radio</label>
+                </div>
+            </form>
         </div>
     </div>
 </body>
