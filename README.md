@@ -1,4 +1,21 @@
-# wincss
-A SASS framework which emulates the styles and syntax of fluent XAML applications as seen in WinUI 2.4.
+<h1 align="center">WinCSS</h1>
+  
+<p align="center">
+  <a href="#controls">Controls</a> |
+  <a href="#preview">Preview</a> |
+  <p>Docs (Coming Soon)</p>
+</p>
 
-> This project is still under heavy development and isn't ready to be used practically. Documentation will come once most/all components are made.
+![Preview](https://i.imgur.com/PEXdZv4.png)
+
+<p align="center">
+  <i></strong>WinCSS<strong> is SASS framework which emulates the styles of Fluent Design applications as seen in WinUI 2.4.</i>
+</p>
+
+<hr>
+
+## Controls
+
+  - [x] Test
+
+## Preview
