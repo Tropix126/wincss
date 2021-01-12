@@ -68,3 +68,7 @@
   - #### Materials
     - [ ] Acrylic
     - [ ] Light/Dark solid color materials
+
+  - #### Shell
+    - [ ] WindowFrame
+    - [ ] TitleBar
