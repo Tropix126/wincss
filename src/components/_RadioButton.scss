@@ -21,7 +21,7 @@ input[type="radio" i] {
             border-color: var(--RadioButtonBorderPointerOver);
         }
         &:active {
-            background-color: var(--RadioButtonBorderPressed);
+            background-color: var(--RadioButtonBackgroundPressed);
             border-color: var(--RadioButtonBorderPressed);
         }
         &:checked {
@@ -39,7 +39,7 @@ input[type="radio" i] {
         content: '';
         width: 9px;
         height: 9px;
-        background-color: var(--RadioButtonForegroundChecked);
+        background-color: var(--RadioButtonGlyphChecked);
         border-radius: 50%;
     }
     &[IsEnabled="false" i], &[disabled] {

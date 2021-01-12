@@ -24,7 +24,7 @@ input[type="checkbox" i]:not(.ToggleSwitch) {
         }
         &:active {
             background-color: var(--CheckBoxBackgroundUncheckedPressed);
-            border-color: var(--CheckBoxBorderUncheckedPointerOver);
+            border-color: var(--CheckBoxBackgroundUncheckedPressed);
         }
         &:checked {
             background-color: var(--CheckBoxBackgroundChecked);
