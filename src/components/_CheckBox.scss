@@ -17,7 +17,7 @@ input[type="checkbox" i]:not(.ToggleSwitch) {
     width: 20px;
     height: 20px;
     border: 1px solid;
-    &:not([IsEnabled="false" i]):not([disabled]) {
+    &:not([disabled]) {
         border-color: var(--CheckBoxBorderUnchecked);
         &:hover {
             border-color: var(--CheckBoxBorderUncheckedPointerOver);
@@ -37,7 +37,7 @@ input[type="checkbox" i]:not(.ToggleSwitch) {
             }
         }
     }
-    &[IsEnabled="false" i], &[disabled] {
+    &[disabled] {
         border-color: var(--CheckBoxBorderUncheckedDisabled);
         &:checked {
             background-color: var(--CheckBoxBackgroundCheckedDisabled);

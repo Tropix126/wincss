@@ -5,6 +5,7 @@
 
 input:not([type]),
 input[type="text"],
+input[type="password"],
 textarea {
     resize: none;
     outline: none;
@@ -20,7 +21,7 @@ textarea {
     &[AllowResize="true" i] {
         resize: both;
     }
-    &[IsEnabled="false" i], &[disabled] {
+    &[disabled] {
         background-color: var(--TextBoxBackgroundDisabled);
         cursor: default;
         &::placeholder {
@@ -39,7 +40,7 @@ textarea {
             color: var(--TextBoxPlaceholderTextDisabled);
         }
     }
-    &:not([IsEnabled="false" i]):not([disabled]) {
+    &:not([disabled]) {
         background-color: var(--TextBoxBackground);
         box-shadow: var(--TextBoxBorder);
         &::placeholder {

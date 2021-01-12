@@ -16,7 +16,7 @@ input[type="checkbox" i].ToggleSwitch {
     width: 40px;
     height: 20px;
     border: 1px solid;
-    &:not([IsEnabled="false" i]):not([disabled]) {
+    &:not([disabled]) {
         border-color: var(--ToggleSwitchBorder);
         &:hover {
             border-color: var(--ToggleSwitchBorderPointerOver);
@@ -50,7 +50,7 @@ input[type="checkbox" i].ToggleSwitch {
         transform: translateX(18px);
         background-color: var(--ToggleSwitchKnobBackgroundOn);
     }
-    &[IsEnabled="false" i], &[disabled] {
+    &[disabled] {
         border-color: var(--ToggleSwitchBorderDisabled);
         &:checked {
             background-color: var(--ToggleSwitchBackgroundOnDisabled);

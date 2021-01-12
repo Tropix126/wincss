@@ -37,14 +37,14 @@ input[type="reset" i] {
         white-space: normal;
         text-align: left;
     }
-    &:active:not([IsEnabled="false" i]):not([disabled]) {
+    &:active:not([disabled]) {
         transform:scale(.975);
         transition: 50ms linear transform;
     }
     &.AccentButton {
         background-color: var(--AccentButtonBackground);
         color: var(--AccentButtonForeground);
-        &:not([IsEnabled="false" i]):not([disabled]) {
+        &:not([disabled]) {
             &:hover {
                 background-color: var(--AccentButtonBackgroundPointerOver);
             }
@@ -56,7 +56,7 @@ input[type="reset" i] {
     &:not(.AccentButton) {
         background-color: var(--ButtonBackground);
         color: var(--ButtonForeground);
-        &:not([IsEnabled="false" i]):not([disabled]) {
+        &:not([disabled]) {
             &:hover {
                 background-color: var(--ButtonBackgroundPointerOver);
             }
@@ -70,7 +70,7 @@ input[type="reset" i] {
         padding: 9px;
         background-color: var(--ImageButtonBackground);
     }
-    &[IsEnabled="false" i], &[disabled] {
+    &[disabled] {
         background-color: var(--ButtonBackgroundDisabled);
         color: var(--ButtonForegroundDisabled);
     }

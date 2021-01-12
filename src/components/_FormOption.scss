@@ -10,9 +10,7 @@
         margin: 0;
         padding-left: 8px;
     }
-    input[disabled], input[IsEnabled="false" i] {
-        ~ label {
-            color: var(--ControlHeaderForegroundDisabled);
-        }
+    input[disabled] ~ label {
+        color: var(--ControlHeaderForegroundDisabled);
     }
 }

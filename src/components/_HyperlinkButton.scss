@@ -13,15 +13,15 @@
     text-decoration-skip: none;
     display: inline-block;
     cursor: pointer;
-    &:not([IsEnabled="false" i]):not([disabled]) {
+    &:not([disabled]) {
         &:hover {
-            color: var(--HyperLinkButtonForeground);
+            color: var(--HyperlinkButtonForegroundPointerOver);
         }
         &:active {
             color: var(--HyperlinkButtonForegroundPressed);
         }
     }
-    &[IsEnabled="false" i], &[disabled] {
+    &[disabled] {
         color: var(--HyperLinkButtonForegroundDisabled);
         cursor: default;
     }

@@ -63,8 +63,8 @@ $Alt: 255, 255, 255;
     
     // CheckBox
     --CheckBoxBorderUnchecked: rgba(var(--Base), 0.6);
-    --CheckBoxBorderUncheckedPointerOver: rgba(var(--Base), 0.6);
-    --CheckBoxBackgroundUncheckedPressed: rgba(var(--Base), 0.6);
+    --CheckBoxBorderUncheckedPointerOver: rgba(var(--Base), 0.8);
+    --CheckBoxBackgroundUncheckedPressed: rgba(var(--Base), 0.4);
     --CheckBoxBorderUncheckedPressed: rgba(var(--Base), 1);
     --CheckBoxBackgroundChecked: #{$AccentColor};
     --CheckBoxGlyphChecked: #{$ChromeLight};

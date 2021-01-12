@@ -23,7 +23,7 @@
             <button class="AccentButton">
                 <span>Accent Button</span>
             </button>
-            <button IsEnabled="false">
+            <button disabled>
                 <span>Disabled Button</span>
             </button>
             <button class="ImageButton">
@@ -50,7 +50,7 @@
         </div>
         <div style="margin-bottom:16px;display:flex;gap:10px;align-items:center;flex-wrap:wrap;">
             <a class="HyperlinkButton" href="#">Hyperlink</a>
-            <a class="HyperlinkButton" IsEnabled="false" href="#">Hyperlink (Disabled)</a>
+            <a class="HyperlinkButton" disabled href="#">Hyperlink (Disabled)</a>
         </div>
         <div style="margin-bottom:16px;display:flex;gap:10px;align-items:center;flex-wrap:wrap;">
             <div>
@@ -59,7 +59,7 @@
             </div>
             <div>
                 <label for="Input2">Disabled Input</label>
-                <input id="Input2" readonly IsEnabled="false" placeholder="Hint text" type="text"></input>
+                <input id="Input2" readonly disabled placeholder="Hint text" type="text"></input>
             </div>
         </div>
         <div style="margin-bottom:16px;display:flex;gap:10px;align-items:center;flex-wrap:wrap;">
@@ -78,7 +78,7 @@
                 <label for="Checkbox2">CheckBox (indeterminate)</label>
             </div>
             <div class="FormOption">
-                <input IsEnabled="false" id="Checkbox3" type="checkbox" />
+                <input disabled id="Checkbox3" type="checkbox" />
                 <label for="Checkbox3">CheckBox (disabled)</label>
             </div>
         </div>
@@ -109,6 +109,9 @@
                     <label for="Switch2">ToggleSwitch (Disabled)</label>
                 </div>
             </form>
+        </div>
+        <div style="margin-bottom:16px;display:flex;flex-direction:column;gap:10px;align-items:flex-start;flex-wrap:wrap;">
+            <input type="range" />
         </div>
     </div>
 </body>
