@@ -20,14 +20,14 @@
 
 ## Features
 
-  - [] Core
+  - [ ] Core
     - [x] Light/Dark variables
-    - [] Component-specific variables
-    - [] Font sizing/scaling variables.
-    - [] Common Mixins
-    - [] CompactSizing
+    - [ ] Component-specific variables
+    - [ ] Font sizing/scaling variables.
+    - [ ] Common Mixins
+    - [ ] CompactSizing
     
-  - [] Components
+  - [ ] Components
     - [x] Button
       - [x] DropDownButton
       - [x] HyperLinkButton
@@ -37,36 +37,36 @@
       - [x] CheckBox
       - [x] ToggleSwitch
       - [x] RadioButton
-    - [] ComboBox
-    - [] ScrollBar
-    - [] RatingControl
-    - [] FlipViewButton
-    - [] GridView
-    - [] ListBox
-    - [] TreeView
-    - [] DataGrid
-    - [] CalendarDatePicker
-    - [] TimePicker
-    - [] ContentDialog
-    - [] Flyout
-    - [] ToolTip
-    - [] TeachingTip
-    - [] PersonPicture
-    - [] AppBar
-    - [] CommandBar
-    - [] MenuBar
-    - [] CommandBarFlyout
-    - [] MenuFlyout
-    - [] NavigationView
-    - [] Pivot
-    - [] TabView
-      - [] TabViewAlt
-    - [] InfoBar
-    - [] ProgressBar
-    - [] ProgressRing
+    - [ ] ComboBox
+    - [ ] ScrollBar
+    - [ ] RatingControl
+    - [ ] FlipViewButton
+    - [ ] GridView
+    - [ ] ListBox
+    - [ ] TreeView
+    - [ ] DataGrid
+    - [ ] CalendarDatePicker
+    - [ ] TimePicker
+    - [ ] ContentDialog
+    - [ ] Flyout
+    - [ ] ToolTip
+    - [ ] TeachingTip
+    - [ ] PersonPicture
+    - [ ] AppBar
+    - [ ] CommandBar
+    - [ ] MenuBar
+    - [ ] CommandBarFlyout
+    - [ ] MenuFlyout
+    - [ ] NavigationView
+    - [ ] Pivot
+    - [ ] TabView
+      - [ ] TabViewAlt
+    - [ ] InfoBar
+    - [ ] ProgressBar
+    - [ ] ProgressRing
     
-  - [] Materials
-    - [] Acrylic
-    - [] Light/Dark solid color materials
+  - [ ] Materials
+    - [ ] Acrylic
+    - [ ] Light/Dark solid color materials
 
 ## Preview
