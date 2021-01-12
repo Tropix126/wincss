@@ -20,14 +20,14 @@
 
 ## Features
 
-  - #### Core
+  - ##### Core
     - [x] Light/Dark variables
     - [ ] Component-specific variables
     - [ ] Font sizing/scaling variables.
     - [ ] Common Mixins
     - [ ] CompactSizing
     
-  - #### Components
+  - ##### Components
     - [x] Button
       - [x] DropDownButton
       - [x] HyperLinkButton
@@ -65,7 +65,7 @@
     - [ ] ProgressBar
     - [ ] ProgressRing
     
-  - #### Materials
+  - ##### Materials
     - [ ] Acrylic
     - [ ] Light/Dark solid color materials
 
