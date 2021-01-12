@@ -1,9 +1,9 @@
 <h1 align="center">WinCSS</h1>
   
 <p align="center">
+  <a href="#overview">Overview</a> |
   <a href="#controls">Controls</a> |
-  <a href="#preview">Preview</a> |
-  <a href="#docs">Docs (Coming Soon)</a>
+  <a href="https://tropix126.github.io/WinCSS" href="#docs">Preview</a>
 </p>
 
 <p align="center">
@@ -15,6 +15,8 @@
 </p>
 
 <hr>
+
+## Overview
 
 ## Controls
 
