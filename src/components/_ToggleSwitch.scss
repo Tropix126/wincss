@@ -1,0 +1,63 @@
+/**
+* WinCSS ToggleSwitch Component
+* http://github.com/tropix126/WinCSS
+*/
+
+input[type="checkbox" i].ToggleSwitch {
+    display: inline-flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    appearance: none;
+    outline: none;
+    box-sizing: border-box;
+    margin: 0;
+    border-radius: 20px;
+    width: 40px;
+    height: 20px;
+    border: 1px solid;
+    &:not([IsEnabled="false" i]):not([disabled]) {
+        border-color: var(--ToggleSwitchBorder);
+        &:hover {
+            border-color: var(--ToggleSwitchBorderPointerOver);
+        }
+        &:active {
+            background-color: var(--ToggleSwitchBackgroundPressed);
+            border-color: var(--ToggleSwitchBorderPressed);
+        }
+        &:checked {
+            background-color: var(--ToggleSwitchBackgroundOn);
+            border-color: var(--ToggleSwitchBorderOn);
+            &:hover {
+                background-color: var(--ToggleSwitchBackgroundOnPointerOver);
+            }
+            &:active {
+                background-color: var(--ToggleSwitchBackgroundOnPressed);
+            }
+        }
+    }
+    &::after {
+        content:'';
+        position:absolute;
+        left: 5px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: var(--ToggleSwitchKnobBackground);
+        transition: 175ms cubic-bezier(0.5, 0, 0.5, 1)transform;
+    }
+    &:checked::after {
+        transform: translateX(18px);
+        background-color: var(--ToggleSwitchKnobBackgroundOn);
+    }
+    &[IsEnabled="false" i], &[disabled] {
+        border-color: var(--ToggleSwitchBorderDisabled);
+        &:checked {
+            background-color: var(--ToggleSwitchBackgroundOnDisabled);
+            border-color: var(--ToggleSwitchBorderOnDisabled);
+        }
+        &::after {
+            opacity: var(--ToggleSwitchKnobOpacityOnDisabled);
+        }
+    }
+}

@@ -5,24 +5,24 @@
 
 .HyperlinkButton {
     font-family: 'Segoe UI', sans-serif;
-    color: $AccentColor;
+    color: var(--HyperLinkButtonForeground);
     font-size: 14px;
+    line-height: 20px;
     text-decoration: underline;
     text-decoration-skip-ink: none;
     text-decoration-skip: none;
-    line-height: 20px;
     display: inline-block;
     cursor: pointer;
     &:not([IsEnabled="false" i]):not([disabled]) {
         &:hover {
-            color: rgba(var(--Base), 0.6);
+            color: var(--HyperLinkButtonForeground);
         }
         &:active {
-            color: rgba(var(--Base), 0.4);
+            color: var(--HyperlinkButtonForegroundPressed);
         }
     }
     &[IsEnabled="false" i], &[disabled] {
-        color: rgba(var(--Base), 0.4);
+        color: var(--HyperLinkButtonForegroundDisabled);
         cursor: default;
     }
 }

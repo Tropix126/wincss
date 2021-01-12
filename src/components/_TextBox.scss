@@ -16,69 +16,68 @@ textarea {
     padding: 6px 12px;
     border-radius: 3px;
     width: fit-content;
-    color: rgba(var(--Base), 1);
+    color: var(--TextBoxForeground);
     &[AllowResize="true" i] {
         resize: both;
     }
     &[IsEnabled="false" i], &[disabled] {
-        background-color: rgba(var(--Base), 0.2);
+        background-color: var(--TextBoxBackgroundDisabled);
         cursor: default;
         &::placeholder {
-            color: rgba(var(--Base), 0.4);
+            color: var(--TextBoxPlaceholderTextDisabled);
         }
         &::-moz-placeholder {
-            color: rgba(var(--Base), 0.4);
-
+            color: var(--TextBoxPlaceholderTextDisabled);
         }
         &::-webkit-input-placeholder {
-            color: rgba(var(--Base), 0.4);
+            color: var(--TextBoxPlaceholderTextDisabled);
         }
         &:-ms-input-placeholder {
-            color: rgba(var(--Base), 0.4);
+            color: var(--TextBoxPlaceholderTextDisabled);
         }
         &:-moz-placeholder {
-            color: rgba(var(--Base), 0.4);
+            color: var(--TextBoxPlaceholderTextDisabled);
         }
     }
     &:not([IsEnabled="false" i]):not([disabled]) {
-        box-shadow: inset 0 0 0 1px rgba(var(--Base), 0.6);
-        background-color: rgba(var(--Alt), 0.4);
+        background-color: var(--TextBoxBackground);
+        box-shadow: var(--TextBoxBorder);
         &::placeholder {
-            color: rgba(var(--Base), 0.6);
+            color: var(--TextBoxPlaceholderText);
         }
         &::-moz-placeholder {
-            color: rgba(var(--Base), 0.6);
+            color: var(--TextBoxPlaceholderText);
         }
         &::-webkit-input-placeholder {
-            color: rgba(var(--Base), 0.6);
+            color: var(--TextBoxPlaceholderText);
         }
         &:-ms-input-placeholder {
-            color: rgba(var(--Base), 0.6);
+            color: var(--TextBoxPlaceholderText);
         }
         &:-moz-placeholder {
-            color: rgba(var(--Base), 0.6);
+            color: var(--TextBoxPlaceholderText);
         }
         &:hover {
-            background-color: rgba(var(--Alt), 1);
-            box-shadow: inset 0 0 0 1px rgba(var(--Base), 0.8);
+            background-color: var(--TextBoxBackgroundPointerOver);
+            box-shadow: var(--TextBoxBorderPointerOver);
         }
         &:focus {
-            background-color: rgba(var(--Alt), 1);
-            box-shadow: inset 0 0 0 2px $AccentColor;
+            background-color: var(--TextBoxBackgroundFocused);
+            box-shadow: var(--TextBoxBorderFocused);
             &::placeholder {
-                color: rgba(var(--Base), 0.4);
+                color: var(--TextBoxPlaceholderTextFocused);
             }
             &::-moz-placeholder {
-                color: rgba(var(--Base), 0.4);
+                color: var(--TextBoxPlaceholderTextFocused);
             }
             &::-webkit-input-placeholder {
-                color: rgba(var(--Base), 0.4);
+                color: var(--TextBoxPlaceholderTextFocused);
             }
             &:-ms-input-placeholder{
-                color: rgba(var(--Base), 0.4);
+                color: var(--TextBoxPlaceholderTextFocused);
             }
             &:-moz-placeholder {
-                color: rgba(var(--Base), 0.4);
+                color: var(--TextBoxPlaceholderTextFocused);
             }
         }
     }

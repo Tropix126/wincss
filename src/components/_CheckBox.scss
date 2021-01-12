@@ -5,7 +5,7 @@
 
 $CheckMarkSymbol: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='17' ViewBox='24 17'%3E%3Cpath d='m 24 1 l -16 16 l -8 -8 l 1 -1 l 7 7 l 15 -15 z'/%3E%3C/svg%3E";
 
-input[type="checkbox" i] {
+input[type="checkbox" i]:not(.ToggleSwitch) {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -18,35 +18,35 @@ input[type="checkbox" i] {
     height: 20px;
     border: 1px solid;
     &:not([IsEnabled="false" i]):not([disabled]) {
-        border-color: rgba(var(--Base), 0.6);
+        border-color: var(--CheckBoxBorderUnchecked);
         &:hover {
-            border-color: rgba(var(--Base), 0.8);
+            border-color: var(--CheckBoxBorderUncheckedPointerOver);
         }
         &:active {
-            background-color: rgba(var(--Base), 0.6);   
-            border-color: rgba(var(--Base), 1);
+            background-color: var(--CheckBoxBackgroundUncheckedPressed);
+            border-color: var(--CheckBoxBorderUncheckedPointerOver);
         }
         &:checked {
-            background-color: $AccentColor;
-            border-color: transparent;
+            background-color: var(--CheckBoxBackgroundChecked);
+            border-color: var(--CheckBoxBorderChecked);
             &:hover {
-                background-color: $AccentColorLight1;
+                background-color: var(--CheckBoxBackgroundCheckedPointerOver);
             }
             &:active {
-                background-color: $AccentColorDark1;
+                background-color: var(--CheckBoxBackgroundCheckedPressed);
             }
         }
     }
     &[IsEnabled="false" i], &[disabled] {
-        border-color: rgba(var(--Base), 0.4);
+        border-color: var(--CheckBoxBorderUncheckedDisabled);
         &:checked {
-            background-color: rgba(var(--Base), 0.4);
-            border-color: transparent;
+            background-color: var(--CheckBoxBackgroundCheckedDisabled);
+            border-color: var(--CheckBoxBorderCheckedDisabled);
         }
     }
     &:checked::after {
         content: '';
-        background-color: $ChromeLight;
+        background-color: var(--CheckBoxGlyphChecked);
     }
     &:checked:not([indeterminate])::after {
         width: 12px;

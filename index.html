@@ -1,6 +1,6 @@
 <!doctype html>
 
-<html lang="en" class="theme-dark">
+<html lang="en" class="ColorThemeDark">
     <head>
     <meta charset="utf-8">
     <title>component test</title>
@@ -12,7 +12,7 @@
     <div style="padding:24px;box-sizing:border-box;background:rgba(var(--Alt)); margin: 0; height: 100vh;flex:1 1 auto">
         <div style="display:flex;justify-content:space-between;flex-wrap:wrap;margin-bottom:10px;">
             <h1 style="font-family:'Segoe UI', sans-serif; color: rgba(var(--Base), 1);font-weight:300;margin:0;user-select:none;font-size:48px">Debug</h1>
-            <button onclick="document.documentElement.classList.toggle('theme-light');document.documentElement.classList.toggle('theme-dark');">
+            <button onclick="document.documentElement.classList.toggle('ColorThemeLight');document.documentElement.classList.toggle('ColorThemeDark');">
                 <span>Toggle Theme</span>
             </button>
         </div>
@@ -95,6 +95,18 @@
                 <div class="FormOption">
                     <input name="radioForm" id="Radio3" disabled type="radio" />
                     <label for="Radio3">Disabled Radio</label>
+                </div>
+            </form>
+        </div>
+        <div style="margin-bottom:16px;display:flex;flex-direction:column;gap:10px;align-items:flex-start;flex-wrap:wrap;">
+            <form style="display:flex;flex-direction:column;gap:10px;">
+                <div class="FormOption">
+                    <input id="Switch1" class="ToggleSwitch" type="checkbox" />
+                    <label for="Switch1">ToggleSwitch</label>
+                </div>
+                <div class="FormOption">
+                    <input id="Switch2" class="ToggleSwitch" disabled type="checkbox" />
+                    <label for="Switch2">ToggleSwitch (Disabled)</label>
                 </div>
             </form>
         </div>

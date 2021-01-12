@@ -1,0 +1,111 @@
+/**
+ * WinCSS Dark Variables
+ * 
+ * These variables are only applied
+ * when the ColorThemeDark class is
+ * present.
+*/
+
+$Base: 255, 255, 255;
+$Alt: 0, 0, 0;
+
+.ColorThemeDark {
+
+    // Base Colors
+    --Base: #{$Base};
+    --Alt: #{$Alt};
+
+    // Button
+    --ButtonBackground: rgba(var(--Base), 0.2);
+    --ButtonForeground: rgba(var(--Base), 1);
+    --ButtonBackgroundPointerOver: rgba(var(--Base), 0.1);
+    --ButtonBackgroundPressed: rgba(var(--Base), 0.4);
+
+    --ButtonBackgroundDisabled: rgba(var(--Base), 0.2);
+    --ButtonForegroundDisabled: rgba(var(--Base), 0.4);
+
+    --AccentButtonBackground: #{$AccentColor};
+    --AccentButtonForeground: #{$ChromeLight};
+    --AccentButtonBackgroundPointerOver: #{$AccentColorLight1};
+    --AccentButtonBackgroundPressed: #{$AccentColorDark1};
+
+    --ImageButtonBackground: rgba(var(--Base), 0);
+
+    // DropDownButton
+
+    // HyperLinkButton
+    --HyperLinkButtonForeground: #{$AccentColor};
+    --HyperlinkButtonForegroundPointerOver: rgba(var(--Base), 0.6);
+    --HyperlinkButtonForegroundPressed: rgba(var(--Base), 0.4);
+    
+    --HyperLinkButtonForegroundDisabled: rgba(var(--Base), 0.4);
+
+    // SplitButton
+
+    // TextBox
+    --TextBoxBackground: rgba(var(--Alt), 0.4);
+    --TextBoxForeground: rgba(var(--Base), 1);
+    --TextBoxBorder: inset 0 0 0 1px rgba(var(--Base), 0.6);
+    --TextBoxPlaceholderText: rgba(var(--Base), 0.6);
+    --TextBoxBackgroundPointerOver: rgba(var(--Alt), 1);
+    --TextBoxBorderPointerOver: inset 0 0 0 1px rgba(var(--Base), 0.8);
+    --TextBoxBackgroundFocused: rgba(var(--Alt), 1);
+    --TextBoxBorderFocused: inset 0 0 0 2px #{$AccentColor};
+    --TextBoxPlaceholderTextFocused: rgba(var(--Base), 0.4);
+
+    --TextBoxBackgroundDisabled: rgba(var(--Base), 0.2);
+    --TextBoxPlaceholderTextDisabled: rgba(var(--Base), 0.4);
+
+    // ControlHeader && FormOption
+    --ControlHeaderForeground: rgba(var(--Base), 1);
+
+    --ControlHeaderForegroundDisabled: rgba(var(--Base), 0.4); // components/FormOption
+    
+    // CheckBox
+    --CheckBoxBorderUnchecked: rgba(var(--Base), 0.6);
+    --CheckBoxBorderUncheckedPointerOver: rgba(var(--Base), 0.6);
+    --CheckBoxBackgroundUncheckedPressed: rgba(var(--Base), 0.6);
+    --CheckBoxBorderUncheckedPressed: rgba(var(--Base), 1);
+    --CheckBoxBackgroundChecked: #{$AccentColor};
+    --CheckBoxGlyphChecked: #{$ChromeLight};
+    --CheckBoxBorderChecked: rgba(var(--Base), 0);
+    --CheckBoxBackgroundCheckedPointerOver: #{$AccentColorLight1};
+    --CheckBoxBackgroundCheckedPressed: #{$AccentColorDark1};
+
+    --CheckBoxBorderUncheckedDisabled: rgba(var(--Base), 0.4);
+    --CheckBoxBorderCheckedDisabled: rgba(var(--Base), 0);
+    --CheckBoxBackgroundCheckedDisabled: rgba(var(--Base), 0.4);
+
+    // RadioButton
+    --RadioButtonBorder: rgba(var(--Base), 0.6);
+    --RadioButtonBorderPointerOver: rgba(var(--Base), 0.8);
+    --RadioButtonBackgroundPressed: rgba(var(--Base), 0.4);
+    --RadioButtonBorderPressed: rgba(var(--Base), 1);
+    --RadioButtonBackgroundChecked: #{$AccentColor};
+    --RadioButtonGlyphChecked: #{$ChromeLight};
+    --RadioButtonBorderChecked: rgba(var(--Base), 0);
+    --RadioButtonBackgroundCheckedPointerOver: #{$AccentColorLight1};
+    --RadioButtonBackgroundCheckedPressed: #{$AccentColorDark1};
+
+    --RadioButtonBorderDisabled: rgba(var(--Base), 0.4);
+    --RadioButtonBackgroundCheckedDisabled: rgba(var(--Base), 0.4);
+    --RadioButtonBorderCheckedDisabled: rgba(var(--Base), 0);
+
+    // ToggleSwitch
+    --ToggleSwitchBorder: rgba(var(--Base), 0.6);
+    --ToggleSwitchKnobBackground: rgba(var(--Base), 1);
+    --ToggleSwitchBorderPointerOver: rgba(var(--Base), 0.8);
+    --ToggleSwitchBackgroundPressed: rgba(var(--Base), 0.4);
+    --ToggleSwitchBorderPressed: rgba(var(--Base), 1);
+    --ToggleSwitchBackgroundOn: #{$AccentColor};
+    --ToggleSwitchBorderOn: rgba(var(--Base), 0);
+    --ToggleSwitchBackgroundOnPointerOver: #{$AccentColorLight1};
+    --ToggleSwitchBackgroundOnPressed: #{$AccentColorDark1};
+    --ToggleSwitchKnobBackgroundOn: #{$ChromeLight};
+
+    --ToggleSwitchBorderDisabled: rgba(var(--Base), 0.4);
+    --ToggleSwitchBackgroundOnDisabled: rgba(var(--Base), 0.2);
+    --ToggleSwitchBorderOnDisabled: rgba(var(--Base), 0);
+    --ToggleSwitchKnobOpacityOnDisabled: 0.4;
+
+}

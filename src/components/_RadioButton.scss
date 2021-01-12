@@ -16,22 +16,22 @@ input[type="radio" i] {
     align-items: center;
     justify-content: center;
     &:not([IsEnabled="false" i]):not([disabled]) {
-        border-color: rgba(var(--Base), 0.6);
+        border-color: var(--RadioButtonBorder);
         &:hover {
-            border-color: rgba(var(--Base), 0.8);
+            border-color: var(--RadioButtonBorderPointerOver)
         }
         &:active {
-            background-color: rgba(var(--Base), 0.6);   
-            border-color: rgba(var(--Base), 1);
+            background-color: var(--RadioButtonBorderPressed);
+            border-color: var(--RadioButtonBorderPressed)
         }
         &:checked {
-            background-color: $AccentColor;
-            border-color: transparent;
+            background-color: var(--RadioButtonBackgroundChecked);
+            border-color: var(--RadioButtonBorderChecked);
             &:hover {
-                background-color: $AccentColorLight1;
+                background-color: var(--RadioButtonBackgroundCheckedPointerOver);
             }
             &:active {
-                background-color: $AccentColorDark1;
+                background-color: var(--RadioButtonBackgroundCheckedPressed);
             }
         }
     }
@@ -39,14 +39,14 @@ input[type="radio" i] {
         content: '';
         width: 9px;
         height: 9px;
-        background-color: $ChromeLight;
+        background-color: var(--RadioButtonForegroundChecked);
         border-radius: 50%;
     }
     &[IsEnabled="false" i], &[disabled] {
-        border-color: rgba(var(--Base), 0.4);
+        border-color: var(--RadioButtonBorderDisabled);
         &:checked {
-            background-color: rgba(var(--Base), 0.4);
-            border-color: transparent;
+            background-color: var(--RadioButtonBackgroundCheckedDisabled);
+            border-color: var(--RadioButtonBorderCheckedDisabled);
         }
     }
 }

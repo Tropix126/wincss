@@ -12,7 +12,7 @@
     }
     input[disabled], input[IsEnabled="false" i] {
         ~ label {
-            color: rgba(var(--Base), 0.4);
+            color: var(--ControlHeaderForegroundDisabled);
         }
     }
 }

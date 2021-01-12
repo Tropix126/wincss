@@ -42,36 +42,36 @@ input[type="reset" i] {
         transition: 50ms linear transform;
     }
     &.AccentButton {
-        background-color: $AccentColor;
-        color: rgba($ChromeLight, 1);
+        background-color: var(--AccentButtonBackground);
+        color: var(--AccentButtonForeground);
         &:not([IsEnabled="false" i]):not([disabled]) {
             &:hover {
-                background-color: $AccentColorLight1;
+                background-color: var(--AccentButtonBackgroundPointerOver);
             }
             &:active {
-                background-color: $AccentColorDark1;
+                background-color: var(--AccentButtonBackgroundPressed);
             }
         }
     }
     &:not(.AccentButton) {
-        background-color: rgba(var(--Base), 0.2);
-        color: rgba(var(--Base), 1);
+        background-color: var(--ButtonBackground);
+        color: var(--ButtonForeground);
         &:not([IsEnabled="false" i]):not([disabled]) {
             &:hover {
-                background-color: rgba(var(--Base), 0.1);
+                background-color: var(--ButtonBackgroundPointerOver);
             }
             &:active {
-                background-color: rgba(var(--Base), 0.4);
+                background-color: var(--ButtonBackgroundPressed);
             }
         }
     }
     &.ImageButton {
         height: auto;
         padding: 9px;
-        background-color: transparent;
+        background-color: var(--ImageButtonBackground);
     }
     &[IsEnabled="false" i], &[disabled] {
-        background-color: rgba(var(--Base), 0.2);
-        color: rgba(var(--Base), 0.4);
+        background-color: var(--ButtonBackgroundDisabled);
+        color: var(--ButtonForegroundDisabled);
     }
 }
