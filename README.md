@@ -3,7 +3,7 @@
 <p align="center">
   <a href="#controls">Controls</a> |
   <a href="#preview">Preview</a> |
-  <a href="#docs>Docs (Coming Soon)</a>
+  <a href="#docs">Docs (Coming Soon)</a>
 </p>
 
 <p align="center">
