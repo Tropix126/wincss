@@ -18,11 +18,11 @@ input[type="radio" i] {
     &:not([IsEnabled="false" i]):not([disabled]) {
         border-color: var(--RadioButtonBorder);
         &:hover {
-            border-color: var(--RadioButtonBorderPointerOver)
+            border-color: var(--RadioButtonBorderPointerOver);
         }
         &:active {
             background-color: var(--RadioButtonBorderPressed);
-            border-color: var(--RadioButtonBorderPressed)
+            border-color: var(--RadioButtonBorderPressed);
         }
         &:checked {
             background-color: var(--RadioButtonBackgroundChecked);
