@@ -22,6 +22,8 @@
 
   - #### Core
     - [x] Light/Dark variables
+    - [ ] Elevation
+    - [ ] Adaptive chrome colors
     - [ ] Component-specific variables
     - [ ] Font sizing/scaling variables.
     - [ ] Common Mixins
