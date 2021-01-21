@@ -3,7 +3,7 @@
 <p align="center">
   <a href="#overview">Overview</a> |
   <a href="#Features">Features</a> |
-  <a href="https://tropix126.github.io/WinCSS" href="#docs">Preview</a>
+  <a href="https://tropix126.github.io/WinCSS">Preview</a>
 </p>
 
 <p align="center">
