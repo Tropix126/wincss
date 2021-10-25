@@ -1,3 +1,5 @@
+> This project has been deprecated in favor of [fluent-svelte](https://fluent-svelte.vercel.app/). [See issue #3](https://github.com/Tropix126/wincss/issues/3) for more information.
+
 <h1 align="center">WinCSS</h1>
   
 <p align="center">
